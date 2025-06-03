@@ -92,10 +92,11 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 7vw;
+    gap: 6vw;
 }
 
 .article {
+    width: 66%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -110,6 +111,9 @@ img {
 }
 
 @media screen and (max-width:1200px) {
+    .flex {
+    padding:10rem 4rem;
+    }
     header div {
         font-size: 3.5vw;
     }
@@ -128,10 +132,6 @@ img {
     #intro label {
         font-size: 3vw;
     }
-    .flex {
-        /* flex-direction: column-reverse; */
-    }
-
 
 }
 
@@ -144,8 +144,9 @@ img {
     }
 
     h1 {
-        font-size: 16vw;
-        line-height: 6vh;
+        font-size: 10vw;
+        line-height: 9vh;
+        margin: 1vh;
     }
 
     a {
