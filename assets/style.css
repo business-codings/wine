@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Playfair Display", serif;
+    color: #FFF;
+
+}
+
+.playfar {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+}
+
+.opensans {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
 
 }
 
@@ -14,5 +23,138 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
+}
+
+main,
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 3rem;
+}
+
+header div {
+    font-size: 1.5vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6vw;
+    line-height: 6vw;
+    font-weight: 400;
+    margin: 3rem 0;
+}
+
+a {
+    font-size: 1.2vw;
+    padding: 1.5vh 2vw;
+    background-color: #FFF;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #FFF;
+    background-color: black;
+}
+
+#intro {
+    width: 70%;
+    height: 30%;
+
+
+}
+
+#intro label {
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: 3vh;
+}
+
+#second {
+    background-color: #501300;
+    min-height: 100vh;
+
+}
+
+.flex {
+    padding: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7vw;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+img {
+    width: 100%;
+}
+
+.image {
+    width: 60%;
+}
+
+@media screen and (max-width:1200px) {
+    header div {
+        font-size: 3.5vw;
+    }
+
+    h1 {
+        font-size: 7vw;
+        line-height: 9vh;
+        margin: 3rem 0;
+    }
+
+    a {
+        font-size: 2vw;
+        padding: 2vh 5vw;
+    }
+
+    #intro label {
+        font-size: 3vw;
+    }
+    .flex {
+        /* flex-direction: column-reverse; */
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+
+
+
+    header div {
+        font-size: 5vw;
+    }
+
+    h1 {
+        font-size: 16vw;
+        line-height: 6vh;
+    }
+
+    a {
+        font-size: 3.2vw;
+    }
+
+    #intro label {
+        font-size: 4.5vw;
+    }
+
+
 }
