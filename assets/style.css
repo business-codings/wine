@@ -19,7 +19,7 @@
 
 main {
     height: 100vh;
-    background-image: url(/assets/background.jpg);
+    background-image: url(./background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,10 +110,29 @@ img {
     width: 60%;
 }
 
+#fruit {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    background-image: url(./pexels-icliff-agendia-272682659-12861281\ \(1\).jpg);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #501300;
+    height: 70vh;
+    padding: 10rem 5rem;
+}
+
 @media screen and (max-width:1200px) {
     .flex {
-    padding:10rem 4rem;
+        padding: 10rem 4rem;
     }
+
     header div {
         font-size: 3.5vw;
     }
@@ -134,6 +153,7 @@ img {
     }
 
 }
+
 
 @media screen and (max-width:768px) {
 
